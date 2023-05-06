@@ -463,3 +463,15 @@ body {
 
         margin-top: 12px;
 }
+
+.footer-text-item {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+
+    margin-top: 80px;
+}
