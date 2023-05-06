@@ -378,6 +378,12 @@ body {
   border-radius: 30px;
 }
 
+.btn-form {
+    background-color: var(--secondary-color);
+        border: none;
+        padding: 11px 22px;
+}
+
 /* -----------FOOTER------------- */
 
 .footer {
