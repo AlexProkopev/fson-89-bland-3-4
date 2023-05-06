@@ -5,63 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href=""><img src="" alt="logo"></a>
-
-        <ul>
-            <li><a href=""></a>Home</li>
-            <li><a href=""></a>About</li>
-            <li><a href=""></a>Service</li>
-            <li><a href=""></a>Menu</li>
-            <li><a href=""></a>Contact</li>
-        </ul>
-
-        <button class="button"> Order Now</button>
+    <header class="header">
+        <div class="container header-container">
+            <a href="" class="logo-link"><img src="./images/vector.png" alt="logo" ></a>
+            
+            <div class="wrap">
+                <ul class="list menu-list">
+                    <li><a href="" class="link menu-link current-link">Home</a></li>
+                    <li><a href="" class="link menu-link">About</a></li>
+                    <li><a href="" class="link menu-link">Service</a></li>
+                    <li><a href="" class="link menu-link">Menu</a></li>
+                    <li><a href="" class="link menu-link">Contact</a></li>
+                </ul>
+                
+                <button type="button" class="button btn-main">Order Now</button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Enjoy Your Favorite Food From Anywhere</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+        <section class=" hero">
+            <div class="container hero-wrap">
+                
+                <div class="hero-container">
+                    <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+                    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    
+                    <button class="button btn-main">Order Now</button>
+                    
+                </div>
 
-            <button class="button"> Order Now</button>
+                <div class="hero-container">
+                    <img src="./images/meny-photo/meny-1.png" alt="" class="hero-img">
+                </div>
+            </div>
 
-            <img src="" alt="meny">
+            
+            
+            
         </section>
 
-        <section>
-            <h2>What’s Special About Our Offerings</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
-            cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-
-            <ul>
-                <li>
-                    <h3>Fasest Delivery</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                </li>
-                <li>
-                    <h3>Easy To Order</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                </li>
-            </ul>
-            <button type="button">Order Now</button>
+        <section class="apple-section">
+            <div class="container apple-wrap">
+                <div class="apple-container">
+                    <img src="./images/aple.jpg" alt="apple">
+                </div>
+                <div class="apple-container">
+                    <h2 class="apple-title">What’s Special About Our Offerings</h2>
+                    <p class="apple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                        tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                    
+                    <ul class="apple-list list">
+                        <li>
+                            <h3 class="apple-title-secondary">Fasest Delivery</h3>
+                            <p class="apple-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                in eros.</p>
+                        </li>
+                        <li>
+                            <h3 class="apple-title-secondary">Easy To Order</h3>
+                            <p class="apple-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                in eros.</p>
+                        </li>
+                    </ul>
+                    <button type="button" class="button btn-second">Order Now</button>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Some of Our Favorites</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul>
-                <li><a href=""><img src="./images/favorites/gamburger.jpg" alt="gamburger"></a></li>
-                <li><a href=""><img src="./images/favorites/Pasta.jpg" alt="Pasta"></a></li>
-                <li><a href=""><img src="./images/favorites/pizza.jpg" alt="pizza"></a></li>
-                <li><a href=""><img src="./images/favorites/chicken.jpg" alt="chicken"></a></li>
-                <li><a href=""><img src="./images/favorites/salat.jpg" alt="salat"></a></li>
-                <li><a href=""><img src="./images/favorites/borshch.jpg" alt="borshch"></a></li>
-            </ul>
+        <section class="favorites-section">
+            <div class="container favorites-wrap">
+                <h2 class="favorites-tile">Some of Our Favorites</h2>
+                <p class="favorites-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="favorites-list list">
+                    <li><a href=""><img src="./images/favorites/gamburger.jpg" alt="gamburger"></a></li>
+                    <li><a href=""><img src="./images/favorites/Pasta.jpg" alt="Pasta"></a></li>
+                    <li><a href=""><img src="./images/favorites/pizza.jpg" alt="pizza"></a></li>
+                    <li><a href=""><img src="./images/favorites/chicken.jpg" alt="chicken"></a></li>
+                    <li><a href=""><img src="./images/favorites/salat.jpg" alt="salat"></a></li>
+                    <li><a href=""><img src="./images/favorites/borshch.jpg" alt="borshch"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-comment">
+            <div class="container">
+                <h2 class="comment-title">What our Customers Say</h2>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="comment-list list">
+                    <article>
+                        <li class="comment-item">
+                            <p class="comment-text-secondary">“The Best app I have used to order food in a while, so many options to choose from
+                                too, I would recommend to
+                                a freind,
+                                No questions asked”
+                            </p>
+                    </article>
+                </li>
+                <li class="comment-item">
+                    <article>
+                        <p class="comment-text-secondary">“The ease with which I can just go in and order what i want was amazing, It has been a
+                            very pleasant
+                            experience ordering
+                            from this app”
+                        </p>
+                    </article>
+                </li>
+                </ul>
+                    
+            </div>
+                
+            
+        </section>
+
+        <section class="banana-section">
+            <div class="container banana-wrap">
+                <div class="banana-container">
+                    <h2 class="banana-title">Subscribe To Get Special Offers</h2>
+                    <p class="banana-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique.</p>
+                    <ul class="banana-list list">
+                        <li>
+                            <p class="banana-text-secondary">Enter your email</p>
+                        </li>
+                        <li>
+                            <button type="button" class="button btn-second">Subscribe</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="banana-container">
+                    <img src="./images/banan.png" alt="banana">
+                </div>
+            </div>
+
         </section>
     </main>
+
+    <footer class="footer">
+        
+        
+        <div class="container footer-wrap">
+            <div class="footer-container">
+                <nav class="nav-footer">
+                    <a href="" class="logo-footer"><img src="./images/vector.png" alt="logo"></a>
+                
+                
+                    <ul class="list menu-list-footer">
+                        <li><a href="" class="link menu-link current-link">Home</a></li>
+                        <li><a href="" class="link menu-link">About</a></li>
+                        <li><a href="" class="link menu-link">Service</a></li>
+                        <li><a href="" class="link menu-link">Menu</a></li>
+                        <li><a href="" class="link menu-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <ul class="privacy-list list">
+                    <li><a href="" class="privacy-link">Privacy Policy</a></li>
+                    <li><a href="" class="privacy-link">Terms of Service</a></li>
+                    <li><a href="" class="privacy-link">Cookies Settings</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-container">
+                    <h2 class="footer-title">Subscribe</h2>
+                    <ul class="footer-list list">
+                       
+                        <li>
+                           
+                            <p class="banana-text-secondary">Enter your email</p>
+                        </li>
+                        <li>
+                            <button type="button" class="button btn-second">Subscribe</button>
+                        </li>
+                    </ul>
+
+                    <p class="footer-text">By subscribing you agree to with our <a href="" class="privacy-link">Privacy Policy</a></p>
+                
+
+            </div>
+
+
+
+        </div>
+            
+    </footer>
 </body>
 </html>
