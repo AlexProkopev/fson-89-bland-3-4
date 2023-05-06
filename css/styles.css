@@ -76,7 +76,8 @@ body {
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+ {
   color: var(--secondary-color);
 }
 
@@ -107,7 +108,9 @@ body {
 }
 
 .btn-main:hover,
-.btn-main:focus {
+.btn-main:focus,
+.btn-form:focus,
+.btn-form:hover {
   background-color: var(--accent-color-yellow);
 }
 
