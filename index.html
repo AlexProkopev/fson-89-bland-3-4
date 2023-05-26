@@ -41,12 +41,52 @@
                         tristique. Duis
                         cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
                     
-                    <button class="button btn-main">Order Now</button>
+                    <button class="button btn-main" type="button" data-modal-open >Order Now</button>
                     
                 </div>
 
-                <div class="hero-container">
-                    <img src="./images/meny-photo/meny-1.png" alt="" class="hero-img">
+                <div class="hero-container container-slide" >
+                    
+                            <ul class=" list list-img-slide" >
+                                <li class="img-item ">
+                                    <a href="" class="link-img-slide">
+                                        <img src="./images/meny-photo/meny-1.png" alt="" width="511" height="511" class="hero-img">
+                                    </a>
+                                </li>
+                                <li class="img-item img-slide-first is-hidden" >
+                                    <img src="./images/meny-photo/menu-2.jpg" alt="" width="511" height="511" class="hero-img">
+                                </li>
+                                <li class="img-item img-slide-second is-hidden" >
+                                    <img src="./images/meny-photo/menu-3.jpg" alt="" width="511" height="511" class="hero-img">
+                                </li>
+                            </ul>
+                            
+                            
+                       
+                    </ul>
+
+                    <!-- ---------------ПОЧЕМУ КОГДА Я СТАВЛЮ БОРДЕР НА ССЫЛКУ В КОТОРОЙ ВНУТРИ ИЗОБРАЖЕНГИЕ,И ЗАДАЮ ЕЙ РЕЛАТИВ,МОИ КНОПКИ ПРОПАДАЮТ,ЗАДАЮ СПИСКУ РЕЛАТИВ И ОНИ ТАК ЖЕ ПРОПАДАЮТ-------------- -->
+                    
+                    
+                    
+                    <button class="btn-hero-left btn-hero" >
+                        <svg width="16" height="30">
+                            <use href="./images/symbol-defs.svg#icon-vector-1">
+
+
+                            </use>
+                        </svg>
+                    </button>
+
+                    <button class="btn-hero-right btn-hero" type="button">
+                        <svg width="16" height="30">
+                            <use href="./images/symbol-defs.svg#icon-vector-2">
+                    
+                    
+                            </use>
+                        </svg>
+                    </button>
+
                 </div>
             </div>
 
@@ -68,11 +108,25 @@
                     
                     <ul class="apple-list list">
                         <li>
+                            <div class="container-icon-apple">
+                                <svg width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#icon-rocket">
+
+                                    </use>
+                                </svg>
+                            </div>
                             <h3 class="apple-title-secondary">Fasest Delivery</h3>
                             <p class="apple-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                                 in eros.</p>
                         </li>
                         <li>
+                            <div class="container-icon-apple">
+                                <svg width="30" height="30">
+                                    <use href="./images/symbol-defs.svg#icon-touch">
+                            
+                                    </use>
+                                </svg>
+                            </div>
                             <h3 class="apple-title-secondary">Easy To Order</h3>
                             <p class="apple-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
                                 in eros.</p>
@@ -204,5 +258,24 @@
         </div>
             
     </footer>
+
+
+    <!-- ---------------------Модалка----------------- -->
+
+   <div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+        <button class=" btn-close" type="button" data-modal-close>
+            <svg class="svg-close-btn" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-coose-btn-form">
+
+                </use>
+            </svg>
+        </button>
+        <h2 class="modal-title">Order Form</h2>
+    </div>
+   </div>
+
+
+    <script src="./modal.js"></script>
 </body>
 </html>
